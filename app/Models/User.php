@@ -23,6 +23,14 @@ class User extends Authenticatable
         'password',
     ];
 
+
+ public function isAdmin(){
+    return $this->getAttribute("role") === "admin";
+   }
+
+
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -32,6 +40,11 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+   
+
+
+
 
     /**
      * Get the attributes that should be cast.
@@ -45,4 +58,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+   
+  
 }
+
