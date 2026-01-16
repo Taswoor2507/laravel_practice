@@ -1,4 +1,4 @@
-# Todo Application
+# TodoBuddy
 
 A simple yet powerful Todo management application built with Laravel 12. This application features user authentication, role-based access control, and a clean interface for managing tasks.
 
@@ -33,7 +33,7 @@ A simple yet powerful Todo management application built with Laravel 12. This ap
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd laravel_practice
+   cd todobuddy
    ```
 
 2. **Install dependencies**
@@ -55,7 +55,7 @@ A simple yet powerful Todo management application built with Laravel 12. This ap
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=laravel_todo
+   DB_DATABASE=todobuddy
    DB_USERNAME=your_username
    DB_PASSWORD=your_password
    ```
