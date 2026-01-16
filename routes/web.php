@@ -21,5 +21,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware(['auth','admin'])->group(function () {
-    Route::get('/admin/todos',[AdminController::class,'allTodos']);
+    Route::get('/admin/todos',[AdminController::class,'allTodos'])->name('admin.todos');
+    Route::get('/admin/todos/{userId}',[AdminController::class,'userTodos'])->name('admin.user.todos');
 });

@@ -21,11 +21,17 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
 
  public function isAdmin(){
     return $this->getAttribute("role") === "admin";
+   }
+
+   public function todos()
+   {
+       return $this->hasMany(Todo::class);
    }
 
 
